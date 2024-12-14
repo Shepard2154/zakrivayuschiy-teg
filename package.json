@@ -1,0 +1,28 @@
+{
+  "name": "zakrivayuschiy-teg",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint **/*.css",
+    "lintfix": "stylelint **/*.css --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shepard2154/zakrivayuschiy-teg.git"
+  },
+  "author": "Shepard2154",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shepard2154/zakrivayuschiy-teg/issues"
+  },
+  "homepage": "https://github.com/Shepard2154/zakrivayuschiy-teg#readme",
+  "description": "",
+  "dependencies": {
+    "prettier": "^3.3.3",
+    "stylelint": "^16.9.0"
+  }
+}
