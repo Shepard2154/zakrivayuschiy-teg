@@ -21,4 +21,9 @@
   min-block-size: 100dvb;
   color: var(--accent-color);
   background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
