@@ -6,12 +6,18 @@
 */
 
 :root .theme-light {
+  --card-text-font-weight: 400;
+  --card-title-font-weight: 700;
+
   --bg-color: #fff;
   --bg-image: url(../images/cover-light-min.png);
   --accent-color: #000;
 }
 
 :root .theme-dark {
+  --card-text-font-weight: 465;
+  --card-title-font-weight: 785;
+
   --bg-color: #000;
   --bg-image: url(../images/cover-dark-min.png);
   --accent-color: #00cc14;

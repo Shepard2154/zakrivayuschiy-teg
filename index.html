@@ -17,11 +17,19 @@
   </head>
   <body class="page">
     <header class="header">
+      <div class="header__title">
+        <h1 class="header__title-logo">&lt;/HTML&gt;</h1>
+        <h2 class="header__title-text">закрывающий тег</h2>
+      </div>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
+            <button
+              type="button"
+              data-theme="dark"
+              class="theme-menu__button button"
+            >
               Темно
             </button>
           </li>
@@ -30,40 +38,106 @@
               type="button"
               data-theme="auto"
               disabled
-              class="theme-menu__button"
+              class="theme-menu__button button"
             >
               Авто
             </button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
+            <button
+              type="button"
+              data-theme="light"
+              class="theme-menu__button button"
+            >
               Светло
             </button>
           </li>
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="content">
+      <section class="work-preparations">
+        <article>
+          <h3 class="work-preparations__title">
+            Фритрек и нулевой спринт: Подготовка к работе
+          </h3>
+          <img
+            class="work-preparations__image"
+            src="./images/bus-min.png"
+            alt="изображение пустого автобуса на ночном фоне."
+          />
+          <div class="work-preparations__content">
+            <ul class="work-preparations__list">
+              <li class="work-preparations__list-item">
+                <p class="work-preparations__text-item">
+                  Это было самое начало пути. На этом этапе важно было
+                  проникнуться основами и настроиться на учёбу. И, возможно,
+                  подумать, как новые знания могут повлиять на ваше будущее.
+                </p>
+              </li>
+              <li class="work-preparations__list-item">
+                <p class="work-preparations__text-item">
+                  Место для ваших воспоминаний о начале обучения.
+                </p>
+              </li>
+            </ul>
+            <ul class="work-preparations__actions">
+              <li class="work-preparations__actions-item">
+                <button class="work-preparations__actions-item-heart button">
+                  <svg
+                    width="27"
+                    height="24"
+                    viewBox="0 0 27 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M6 0H3V3H6V0Z" fill="currentColor" />
+                    <path d="M9 0H6V3H9V0Z" fill="currentColor" />
+                    <path d="M3 3H0V6H3V3Z" fill="currentColor" />
+                    <path d="M3 6H0V9H3V6Z" fill="currentColor" />
+                    <path d="M3 9H0V12H3V9Z" fill="currentColor" />
+                    <path d="M12 0H9V3H12V0Z" fill="currentColor" />
+                    <path d="M6 12H3V15H6V12Z" fill="currentColor" />
+                    <path d="M9 15H6V18H9V15Z" fill="currentColor" />
+                    <path d="M12 18H9V21H12V18Z" fill="currentColor" />
+                    <path d="M21 0H24V3H21V0Z" fill="currentColor" />
+                    <path d="M18 0H21V3H18V0Z" fill="currentColor" />
+                    <path d="M24 3H27V6H24V3Z" fill="currentColor" />
+                    <path d="M24 6H27V9H24V6Z" fill="currentColor" />
+                    <path d="M24 9H27V12H24V9Z" fill="currentColor" />
+                    <path d="M15 0H18V3H15V0Z" fill="currentColor" />
+                    <path d="M21 12H24V15H21V12Z" fill="currentColor" />
+                    <path d="M18 15H21V18H18V15Z" fill="currentColor" />
+                    <path d="M15 18H18V21H15V18Z" fill="currentColor" />
+                    <path d="M15 3H12V6H15V3Z" fill="currentColor" />
+                    <path d="M15 21H12V24H15V21Z" fill="currentColor" />
+                  </svg>
+                </button>
+              </li>
+              <li class="work-preparations__actions-item">
+                <button class="work-preparations__actions-item-like button">
+                  <span class="button__text">Like</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <button class="save button">
+        <div class="save-icon">
+          <svg
+            width="21"
+            height="21"
+            viewBox="0 0 21 21"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <use href="./svg/floppy.svg#floppy" />
+          </svg>
+        </div>
+        <span class="save-text button__text">Сохранить на память</span>
+      </button>
+    </main>
     <script src="./scripts/set-theme.js"></script>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
-
-<svg
-  width="3"
-  height="3"
-  viewBox="0 0 3 3"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <symbol id="floppy" fill="currentColor">
-    <rect
-      x="2.80728"
-      y="0.846008"
-      width="2.15385"
-      height="2.15385"
-      transform="rotate(90 2.80728 0.846008)"
-      fill="#00CC14"
-    />
-  </symbol>
-</svg>
