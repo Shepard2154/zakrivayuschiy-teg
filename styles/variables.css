@@ -1,13 +1,13 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-  --main-font: 'Inter';
+  --main-font: 'Inter-Variable';
   --accent-font: 'PressStart2P-Regular';
   --card-text-font-weight: 400;
   --card-title-font-weight: 700;
 
   --bg-color: #fff;
-  --bg-image: url(../images/cover-light-min.png);
+  --bg-image: url(../svg/pattern-light.svg);
   --accent-color: #000;
 }
 
@@ -18,7 +18,7 @@
     --card-title-font-weight: 785;
 
     --bg-color: #000;
-    --bg-image: url(../images/cover-dark-min.png);
+    --bg-image: url(../svg/pattern-dark.svg);
     --accent-color: #00cc14;
   }
 }

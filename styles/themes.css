@@ -10,7 +10,7 @@
   --card-title-font-weight: 700;
 
   --bg-color: #fff;
-  --bg-image: url(../images/cover-light-min.png);
+  --bg-image: url(../svg/pattern-light.svg);
   --accent-color: #000;
 }
 
@@ -19,6 +19,6 @@
   --card-title-font-weight: 785;
 
   --bg-color: #000;
-  --bg-image: url(../images/cover-dark-min.png);
+  --bg-image: url(../svg/pattern-dark.svg);
   --accent-color: #00cc14;
 }
