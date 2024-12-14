@@ -19,4 +19,6 @@
   font-variation-settings: 'wght' var(--card-text-font-weight, 400);
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  color: var(--accent-color);
+  background-color: var(--bg-color);
 }
