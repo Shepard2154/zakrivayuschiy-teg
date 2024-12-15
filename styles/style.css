@@ -213,7 +213,7 @@
 .work-preparations__actions {
   display: flex;
   justify-content: end;
-  gap: 12px;
+  gap: 7px;
 }
 
 .work-preparations__actions-item {
@@ -236,6 +236,7 @@
 .work-preparations__actions-item-like {
   display: flex;
   justify-content: center;
+  height: 100%;
   border: 2px solid currentColor;
   min-inline-size: 130px;
   min-block-size: 38px;
@@ -299,6 +300,12 @@
   to {
     transform: scaleX(1);
   }
+}
+
+/* SVG styles */
+
+.sparks {
+  opacity: 0;
 }
 
 @media (width < 376px) {
