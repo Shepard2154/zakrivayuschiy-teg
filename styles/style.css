@@ -165,7 +165,7 @@
   justify-content: center;
 }
 
-.work-preparations {
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -175,7 +175,7 @@
   inline-size: clamp(375px, 100vw, 700px);
 }
 
-.work-preparations__title {
+.card__title {
   width: 100%;
   padding-inline: 10px;
   padding-block: 6px;
@@ -185,12 +185,12 @@
   font-variation-settings: 'wght' var(--card-title-font-weight);
 }
 
-.work-preparations__image {
+.card__image {
   width: 100%;
   object-fit: cover;
 }
 
-.work-preparations__content {
+.card__content {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -198,42 +198,40 @@
   padding-block: 22px;
 }
 
-.work-preparations__list {
+.card__list {
   display: flex;
   flex-direction: column;
   gap: 27px;
 }
 
-.work-preparations__text-item {
+.card__text-item {
   font-size: 18px;
   line-height: 21px;
   font-variation-settings: 'wght' var(--card-text-font-weight);
 }
 
-.work-preparations__actions {
+.card__actions {
   display: flex;
   justify-content: end;
   gap: 7px;
 }
 
-.work-preparations__actions-item {
+.card__actions-item {
   display: flex;
   align-items: end;
 }
 
-.work-preparations__actions-item:has(.work-preparations__actions-item-heart) {
+.card__actions-item:has(.card__actions-item-heart) {
   outline: 2px solid transparent;
   outline-offset: -2px;
 }
 
-.work-preparations__actions-item:has(
-    .work-preparations__actions-item-heart:focus-visible
-  ) {
+.card__actions-item:has(.card__actions-item-heart:focus-visible) {
   outline-color: var(--accent-color);
   transition: outline 0.3s ease;
 }
 
-.work-preparations__actions-item-like {
+.card__actions-item-like {
   display: flex;
   justify-content: center;
   height: 100%;
@@ -329,7 +327,7 @@
   transition: fill 0.3s linear;
 }
 
-.work-preparations__actions:has(.is-liked) .heart > path {
+.card__actions:has(.is-liked) .heart > path {
   opacity: 1;
   fill: var(--heart-color-sparks);
   animation: scaling 0.3s ease-in 0.1s alternate;
@@ -339,7 +337,7 @@
   opacity: 0;
 }
 
-.work-preparations__actions:has(.is-liked) .sparks {
+.card__actions:has(.is-liked) .sparks {
   animation: sparks 0.3s ease-in 0.3s alternate;
 }
 
