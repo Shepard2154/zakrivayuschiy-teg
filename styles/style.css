@@ -203,12 +203,11 @@
     display: block;
   }
 
-  .save-icon__container {
-    padding-block-end: 8px;
-  }
-
   .save-icon {
+    display: block;
     width: 28px;
-    height: 28px;
+    height: 100%;
+    margin: 0 auto;
+    padding-block-end: 8px;
   }
 }
