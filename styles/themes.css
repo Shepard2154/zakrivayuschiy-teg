@@ -13,7 +13,7 @@
   --bg-image: url(../svg/pattern-light.svg);
   --accent-color: #000;
 
-  --heart-color-contur: var(--accent-color);
+  --heart-color-contur: var(--accent-color, #000);
 }
 
 :root .theme-dark {
@@ -24,5 +24,19 @@
   --bg-image: url(../svg/pattern-dark.svg);
   --accent-color: #00cc14;
 
-  --heart-color-contur: var(--accent-color);
+  --heart-color-contur: var(--accent-color, #00cc14);
+}
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --card-text-font-weight: 465;
+    --card-title-font-weight: 785;
+
+    --bg-color: #000;
+    --bg-image: url(../svg/pattern-dark.svg);
+    --accent-color: #00cc14;
+
+    --heart-color-contur: var(--accent-color, #00cc14);
+  }
 }
