@@ -12,3 +12,103 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes underlining {
+
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fluctuation {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes filling {
+
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes scaling {
+
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes sparks {
+
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.theme-menu__button:focus-visible::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  background-color: currentColor;
+  transform-origin: 0% 100%;
+  animation: underlining 0.3s ease;
+  inset-inline-start: 0;
+  inset-block-end: -1px;
+}
+
+.theme-menu__item:has(.theme-menu__button:disabled)::before {
+  content: '▶';
+  position: absolute;
+  opacity: 0.6;
+  animation: fluctuation 0.5s infinite ease-in-out alternate;
+  inset-inline-end: 74.5px;
+}
+
+.actions-group:hover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color, #000);
+  transform-origin: 0% 100%;
+  animation: filling 0.5s ease-in-out;
+}
+
+.card__actions:has(.is-liked) .heart > path {
+  opacity: 1;
+  fill: var(--heart-color-sparks, #f00);
+  stroke: var(--heart-color-sparks, #f00);
+  animation: scaling 0.3s ease-in 0.1s alternate;
+}
+
+.card__actions:has(.is-liked) .sparks {
+  animation: sparks 0.3s ease-in 0.3s alternate;
+}
