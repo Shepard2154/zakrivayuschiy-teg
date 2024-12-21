@@ -26,7 +26,7 @@
   background-image: var(--bg-gradient-1), var(--bg-gradient-2),
     var(--bg-gradient-3);
   background-repeat: repeat;
-  background-size: 4px;
+  background-size: cover;
   background-attachment: fixed;
   font-variation-settings: 'wght' var(--card-text-font-weight, 400);
   min-inline-size: 320px;
@@ -125,6 +125,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 50px;
 }
 
 .card {
@@ -146,6 +147,35 @@
   font-size: 18px;
   line-height: 21.78px;
   font-variation-settings: 'wght' var(--card-title-font-weight, 400);
+}
+
+.card__image-wrapper {
+  position: relative;
+}
+
+.card__image-label {
+  position: absolute;
+  opacity: 0.5;
+  color: var(--accent-color, #000);
+  font-family: var(--accent-font, 'PressStart2P-Regular');
+  font-size: 14px;
+  line-height: 14px;
+  text-shadow: 0 0 1px var(--bg-color, #fff);
+  inset-inline-end: 13px;
+  inset-block-start: 25px;
+  mix-blend-mode: hard-light;
+}
+
+@supports (
+  (text-stroke: 1px var(--bg-color, #fff)) or
+    (-webkit-text-stroke: 1px var(--bg-color, #fff))
+) {
+
+  .card__image-label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--bg-color, #fff);
+    text-stroke: 1px var(--bg-color, #fff);
+  }
 }
 
 .card__image {
