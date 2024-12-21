@@ -359,6 +359,51 @@
   transform-origin: center;
 }
 
+/* own content */
+
+.s1-start,
+.s1-end,
+.s2-start,
+.s2-end,
+.s3-start,
+.s3-end,
+.s4-here {
+  height: 375px;
+  object-fit: cover;
+}
+
+.s0-there {
+  filter: sepia(70%);
+}
+
+.s1-start {
+  filter: blur(0.1rem);
+}
+
+.s1-end {
+  filter: brightness(200%);
+}
+
+.s2-start {
+  filter: contrast(30%);
+}
+
+.s2-end {
+  filter: opacity(0.7);
+}
+
+.s3-start {
+  filter: grayscale(0.8);
+}
+
+.s3-end {
+  filter: hue-rotate(-120deg);
+}
+
+.s4-here {
+  filter: saturate(200%) hue-rotate(20deg);
+}
+
 @media (width < 376px) {
 
   .save {
