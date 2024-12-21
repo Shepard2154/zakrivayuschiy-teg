@@ -246,6 +246,12 @@
   line-height: 12.6px;
 }
 
+.button__text,
+.save-icon {
+  color: var(--button-text-color, #fff);
+  mix-blend-mode: difference;
+}
+
 .save {
   display: flex;
   justify-content: center;
@@ -269,13 +275,6 @@
 .actions-group:focus-visible {
   box-shadow: 2px 2px 0 0 var(--accent-color, #000);
   transition: box-shadow 0.3s ease;
-}
-
-.actions-group:hover .save-icon,
-.actions-group:hover .button__text {
-  position: relative;
-  color: var(--bg-color, #fff);
-  transition: color 1s ease;
 }
 
 /* SVG styles */

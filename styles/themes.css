@@ -22,6 +22,7 @@
   );
   --bg-gradient-3: repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   --accent-color: #000;
+  --button-text-color: var(--bg-color);
 
   --heart-color-contur: var(--accent-color, #000);
 }
@@ -43,6 +44,7 @@
   );
   --bg-gradient-3: repeating-linear-gradient(to bottom, #007f0c 0.01%, #004306);
   --accent-color: #00cc14;
+  --button-text-color: var(--accent-color, #00cc14);
 
   --heart-color-contur: var(--accent-color, #00cc14);
 }
