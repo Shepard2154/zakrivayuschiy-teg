@@ -10,7 +10,17 @@
   --card-title-font-weight: 700;
 
   --bg-color: #fff;
-  --bg-image: url(../svg/pattern-light.svg);
+  --bg-gradient-1: repeating-linear-gradient(
+    to right,
+    #d3d3d3 0 2px,
+    transparent 2px 4px
+  );
+  --bg-gradient-2: repeating-linear-gradient(
+    to bottom,
+    #d3d3d3 0 2px,
+    transparent 2px 4px
+  );
+  --bg-gradient-3: repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   --accent-color: #000;
 
   --heart-color-contur: var(--accent-color, #000);
@@ -21,7 +31,17 @@
   --card-title-font-weight: 785;
 
   --bg-color: #000;
-  --bg-image: url(../svg/pattern-dark.svg);
+  --bg-gradient-1: repeating-linear-gradient(
+    to right,
+    #000 0 2px,
+    transparent 2px 4px
+  );
+  --bg-gradient-2: repeating-linear-gradient(
+    to bottom,
+    #000 0 2px,
+    transparent 2px 4px
+  );
+  --bg-gradient-3: repeating-linear-gradient(to bottom, #007f0c 0.01%, #004306);
   --accent-color: #00cc14;
 
   --heart-color-contur: var(--accent-color, #00cc14);
