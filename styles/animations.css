@@ -91,7 +91,8 @@
   inset-inline-end: 74.5px;
 }
 
-.actions-group:hover::before {
+.actions-group:hover::before,
+.dialog__button:hover::before {
   content: '';
   position: absolute;
   inset: 0;

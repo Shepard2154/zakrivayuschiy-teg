@@ -277,6 +277,50 @@
   transition: box-shadow 0.3s ease;
 }
 
+/* dialog */
+
+.dialog {
+  border: 2px solid var(--accent-color, #000);
+  padding: 30px 42px;
+  color: var(--accent-color, #000);
+  font-family: var(--accent-font, 'PressStart2P-Regular');
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  background: var(--bg-color, #fff);
+  max-inline-size: 355px;
+}
+
+.dialog[open] {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  gap: 30px;
+}
+
+.dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+}
+
+.dialog__content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dialog__icon {
+  flex-shrink: 0;
+  inline-size: 39px;
+  block-size: 39px;
+}
+
+.dialog__button {
+  position: relative;
+  border: 2px solid currentColor;
+  padding-inline: 17px;
+  padding-block: 9px;
+  inline-size: 100%;
+}
+
 /* SVG styles */
 
 .like-icon .main-body,
@@ -327,5 +371,9 @@
     height: 100%;
     margin: 0 auto;
     padding-block-end: 8px;
+  }
+
+  .dialog {
+    padding: 30px;
   }
 }
